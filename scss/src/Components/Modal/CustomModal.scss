@@ -1,0 +1,25 @@
+.modal-dialog {
+    border: 3px solid #343031;
+    border-radius: 10px;
+    box-shadow: 0.7rem 0.7rem #343031;
+
+    .modalHeader {
+        border-bottom: 2px solid #343031;
+    }
+
+    .modal-header {
+        background-color: #FED2CF;
+        border-bottom: 1px solid #343031;
+    }
+
+    .modalBody {
+        background: #FBF5E7;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        h4 {
+            font-size: 1.2rem;
+            line-height: 1.5em;
+        }
+    }
+}
