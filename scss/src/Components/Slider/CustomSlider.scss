@@ -1,0 +1,90 @@
+@import '../../Variables.scss';
+
+.CustomSlider {
+    // background: rgb(210, 208, 208);
+    width: 100%;
+
+    .sliderContent {
+        position: relative;
+        width: 100%;
+        border: 3px solid #000;
+        border-radius: 20px;
+        background: #CDFDF1;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        .slider {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            transform: translateX(-100%);
+            transition: 0.5s;
+
+            img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+
+        .rightSlide {
+            position: absolute;
+            right: 0;
+        }
+
+        span {
+            position: absolute;
+            width: 5vw;
+            height: 5vw;
+            background: #F6D14E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 2.5vw;
+            -webkit-text-stroke: 0.25vw;
+            cursor: pointer;
+            border: 0.25vw solid $BorderColor;
+            z-index: 10;
+        }
+    }
+
+    .indexBx {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            position: relative;
+            width: 4vw;
+            height: 4vw;
+            background: #F6D14E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            letter-spacing: 1px;
+            font-size: 2vw;
+            -webkit-text-stroke: 0.1vw;
+            cursor: pointer;
+            border: 0.25vw solid $BorderColor;
+            margin-right: 5vw;
+            margin-top: 1vw;
+            transition: 0.1s;
+            z-index: 10;
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+
+            &.active {
+                background: #CDFDF1;
+            }
+        }
+    }
+}
