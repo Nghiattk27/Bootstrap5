@@ -1,0 +1,15 @@
+.container {
+    border: 1px solid #000;
+    min-width: 95vw;
+    min-height: 200vh;
+
+    .row {
+        // padding: 0 3em;
+
+        .col {
+            // border: 1px solid #000;
+            padding: none;
+            margin: 5vw 0;
+        }
+    }
+}

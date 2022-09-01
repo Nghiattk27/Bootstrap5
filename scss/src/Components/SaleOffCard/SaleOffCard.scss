@@ -1,0 +1,91 @@
+.SaleOffCard {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: #FFD1E3;
+
+    .title {
+        h2 {
+            color: #FFD95C;
+            font-size: 5.5vw;
+            letter-spacing: -2px;
+            font-weight: 800;
+            -webkit-text-stroke: 0.15vw #000;
+        }
+    }
+
+    .content {
+        position: relative;
+        width: 40vw;
+        height: 15vw;
+        border: 0.2vw solid #000;
+        margin: 3vw 0;
+        display: flex;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .discount {
+            position: relative;
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(241, 112, 112);
+
+            h2 {
+                transform: rotate(-90deg);
+                color: #fff;
+                font-size: 2.3vw;
+                letter-spacing: -2px;
+                font-weight: 700;
+                line-height: 1.2em;
+                // -webkit-text-stroke: 0.15vw #000;
+            }
+        }
+
+        .mainContent {
+            position: relative;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #07252d;
+
+            h2 {
+                // width: 5vw;
+                font-size: 5vw;
+                font-weight: 900;
+                color: #0e3742;
+                -webkit-text-stroke: 0.15vw #000;
+                -webkit-box-reflect: below 0px linear-gradient(transparent, #0008);
+                line-height: 0.7em;
+                outline: none;
+                animation: animate 1s linear infinite;
+            }
+
+            @keyframes animate {
+
+                0%,
+                30% {
+                    color: #0e3742;
+                    text-shadow: none;
+                }
+
+                31%,
+                100% {
+                    color: #fff;
+                    text-shadow: 0 0 10px #03bcf4,
+                        0 0 20px #03bcf4,
+                        0 0 40px #03bcf4,
+                        0 0 80px #03bcf4,
+                        0 0 160px #03bcf4;
+                }
+            }
+        }
+    }
+}

@@ -12,19 +12,21 @@ import CustomSlider from './Components/Slider/CustomSlider';
 import wow1 from './images/wow1.jpg';
 import wow2 from './images/wow2.jpg';
 import wow3 from './images/wow3.jpg';
+import Responsive from './Components/Responsive/Responsive';
+import SaleOffCard from './Components/SaleOffCard/SaleOffCard';
 
 function App() {
 
-  const [slider, setSlider] = useState([]);
+  // const [slider, setSlider] = useState([]);
 
-  useEffect(() => {
-    setSlider([...slider, wow3, wow1, wow2, wow3, wow1]);
-  }, [])
+  // useEffect(() => {
+  //   setSlider([...slider, wow3, wow1, wow2, wow3, wow1]);
+  // }, [])
 
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
 
   return (
     <div className="App">
@@ -37,6 +39,8 @@ function App() {
       {/* <div className='sliderBx'>
         <CustomSlider slider={slider} />
       </div> */}
+      {/* <Responsive /> */}
+      <SaleOffCard />
     </div>
   )
 }
