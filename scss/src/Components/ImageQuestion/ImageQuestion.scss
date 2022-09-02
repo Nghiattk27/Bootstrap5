@@ -1,0 +1,139 @@
+@import "../../Variables.scss";
+
+.ImageQuestion {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0.5vw solid $BorderColor;
+    border-radius: 1.5vw;
+    box-shadow: 0.7rem 0.7rem $BorderColor;
+    background: $BackgourndModal;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .header {
+        position: relative;
+        width: 100%;
+        height: 10%;
+        border-bottom: 0.5vw solid $BorderColor;
+        padding: 0.2vw 1vw;
+
+        .nextPrev {
+            position: relative;
+            width: 10%;
+            height: 100%;
+            // background: rgb(147, 145, 145);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                position: relative;
+                height: 100%;
+                aspect-ratio: 1 / 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2vw;
+                -webkit-text-stroke: 0.1vw;
+                margin-right: 1vw;
+                border: 0.25vw solid $BorderColor;
+                border-radius: 0.25vw;
+                overflow: hidden;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .content {
+        position: relative;
+        width: 100%;
+        height: 75%;
+        display: flex;
+        overflow-y: scroll;
+
+        .question {
+            position: relative;
+            width: 60%;
+            height: 100%;
+
+            .questionContent {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 2vw 1vw;
+
+                h2 {
+                    font-size: 1.8vw;
+                }
+
+            }
+
+            .options {
+                position: relative;
+                width: 100%;
+                height: auto;
+
+                ul {
+                    width: 100%;
+                    height: auto;
+                    list-style: none;
+
+                    li {
+                        font-size: 1.7vw;
+                        -webkit-text-stroke: 0.01vw;
+                        margin-bottom: 1.5vw;
+                        display: flex;
+                        // flex-direction: row;
+
+                        .checkBx {
+                            position: relative;
+                            min-width: 3vw;
+                            min-height: 3vw;
+                            max-width: 3vw;
+                            max-height: 3vw;
+                            margin-right: 1vw;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .imageBx {
+            position: relative;
+            width: 40%;
+            // background: rgb(77, 48, 179);
+
+            .imgBx {
+                position: relative;
+                left: 50%;
+                width: 95%;
+                height: auto;
+                margin-top: 5%;
+                border: 0.25vw solid $BorderColor;
+                border-radius: 2vw;
+                overflow: hidden;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .submit {
+        position: relative;
+        width: 100%;
+        height: 15%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .button {
+            min-width: 3vw;
+            min-height: 2vw;
+        }
+    }
+
+}

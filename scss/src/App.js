@@ -14,6 +14,10 @@ import wow2 from './images/wow2.jpg';
 import wow3 from './images/wow3.jpg';
 import Responsive from './Components/Responsive/Responsive';
 import SaleOffCard from './Components/SaleOffCard/SaleOffCard';
+import ImageQuestion from './Components/ImageQuestion/ImageQuestion';
+import VideoLecture from './Components/VideoLecture/VideoLecture';
+import Template from './Components/Template/Template';
+import VideoCustom from './Components/VideoCustom/VideoCustom';
 
 function App() {
 
@@ -40,7 +44,14 @@ function App() {
         <CustomSlider slider={slider} />
       </div> */}
       {/* <Responsive /> */}
-      <SaleOffCard />
+      {/* <SaleOffCard /> */}
+      {/* <div className='imageQuestionBx'>
+        <ImageQuestion />
+      </div> */}
+      {/* <Template /> */}
+      <div className='VideoLectureBx'>
+        <VideoCustom />
+      </div>
     </div>
   )
 }
